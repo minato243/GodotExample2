@@ -1,0 +1,927 @@
+{
+  "map1": {
+	"objects": [
+	  {
+		"id": "TOW_1",
+		"type": "TOW",
+		"name": "TOW_1",
+		"iso_pos": [
+		  {
+			"x": 47,
+			"y": 42
+		  }
+		]
+	  },
+	  {
+		"id": "STO_2",
+		"type": "STO",
+		"name": "STO_2",
+		"iso_pos": [
+		  {
+			"x": 40,
+			"y": 52
+		  }
+		]
+	  },
+	  {
+		"id": "ROA_1",
+		"type": "ROA",
+		"name": "ROA_1",
+		"iso_pos": [
+		  {
+			"x": 44,
+			"y": 33
+		  },
+		  {
+			"x": 44,
+			"y": 36
+		  },
+		  {
+			"x": 44,
+			"y": 39
+		  },
+		  {
+			"x": 44,
+			"y": 42
+		  },
+		  {
+			"x": 44,
+			"y": 45
+		  },
+		  {
+			"x": 44,
+			"y": 48
+		  },
+		  {
+			"x": 44,
+			"y": 51
+		  },
+		  {
+			"x": 35,
+			"y": 36
+		  },
+		  {
+			"x": 38,
+			"y": 36
+		  },
+		  {
+			"x": 41,
+			"y": 36
+		  },
+		  {
+			"x": 38,
+			"y": 42
+		  },
+		  {
+			"x": 41,
+			"y": 42
+		  }
+		]
+	  },
+	  {
+		"id": "FPT_1",
+		"type": "FPT",
+		"name": "FPT_1",
+		"iso_pos": [
+		  {
+			"x": 35,
+			"y": 46
+		  },
+		  {
+			"x": 37,
+			"y": 46
+		  },
+		  {
+			"x": 39,
+			"y": 46
+		  },
+		  {
+			"x": 35,
+			"y": 48
+		  },
+		  {
+			"x": 37,
+			"y": 48
+		  },
+		  {
+			"x": 39,
+			"y": 48
+		  },
+		  {
+			"x": 35,
+			"y": 50
+		  },
+		  {
+			"x": 37,
+			"y": 50
+		  },
+		  {
+			"x": 39,
+			"y": 50
+		  },
+		  {
+			"x": 42,
+			"y": 46
+		  },
+		  {
+			"x": 42,
+			"y": 48
+		  },
+		  {
+			"x": 42,
+			"y": 50
+		  }
+		]
+	  },
+	  {
+		"id": "OBS_1",
+		"type": "OBS",
+		"name": "OBS_1",
+		"iso_pos": [
+		  {
+			"x": 34,
+			"y": 43
+		  },
+		  {
+			"x": 44,
+			"y": 30
+		  }
+		]
+	  },
+	  {
+		"id": "OBS_2",
+		"type": "OBS",
+		"name": "OBS_2",
+		"iso_pos": [
+		  {
+			"x": 31,
+			"y": 38
+		  },
+		  {
+			"x": 34,
+			"y": 33
+		  },
+		  {
+			"x": 41,
+			"y": 34
+		  }
+		]
+	  },
+	  {
+		"id": "HOU_1",
+		"type": "HOU",
+		"name": "HOU_1",
+		"iso_pos": [
+		  {
+			"x": 41,
+			"y": 39
+		  },
+		  {
+			"x": 38,
+			"y": 39
+		  }
+		]
+	  }
+	],
+	"players": [],
+	"monsters": [],
+	"xSize": 90,
+	"ySize": 90
+  },
+  "expansion": {
+	"block_size": {
+	  "width": 10,
+	  "height": 10
+	},
+	"belt_group": [
+	  {
+		"group": 1,
+		"group_pos": [
+		  {
+			"x": 3,
+			"y": 3
+		  },
+		  {
+			"x": 4,
+			"y": 3
+		  },
+		  {
+			"x": 5,
+			"y": 3
+		  },
+		  {
+			"x": 6,
+			"y": 3
+		  },
+		  {
+			"x": 7,
+			"y": 3
+		  },
+		  {
+			"x": 7,
+			"y": 4
+		  },
+		  {
+			"x": 7,
+			"y": 5
+		  },
+		  {
+			"x": 7,
+			"y": 6
+		  },
+		  {
+			"x": 7,
+			"y": 7
+		  },
+		  {
+			"x": 6,
+			"y": 7
+		  },
+		  {
+			"x": 5,
+			"y": 7
+		  },
+		  {
+			"x": 4,
+			"y": 7
+		  },
+		  {
+			"x": 3,
+			"y": 7
+		  },
+		  {
+			"x": 3,
+			"y": 6
+		  },
+		  {
+			"x": 3,
+			"y": 5
+		  },
+		  {
+			"x": 3,
+			"y": 4
+		  }
+		],
+		"price_order": [
+		  {
+			"order": 1,
+			"cost": 5000
+		  },
+		  {
+			"order": 2,
+			"cost": 5250
+		  },
+		  {
+			"order": 3,
+			"cost": 5550
+		  },
+		  {
+			"order": 4,
+			"cost": 5900
+		  },
+		  {
+			"order": 5,
+			"cost": 6300
+		  },
+		  {
+			"order": 6,
+			"cost": 6750
+		  },
+		  {
+			"order": 7,
+			"cost": 7250
+		  },
+		  {
+			"order": 8,
+			"cost": 7800
+		  },
+		  {
+			"order": 9,
+			"cost": 8400
+		  },
+		  {
+			"order": 10,
+			"cost": 9050
+		  },
+		  {
+			"order": 11,
+			"cost": 9750
+		  },
+		  {
+			"order": 12,
+			"cost": 10500
+		  },
+		  {
+			"order": 13,
+			"cost": 11300
+		  },
+		  {
+			"order": 14,
+			"cost": 12150
+		  },
+		  {
+			"order": 15,
+			"cost": 13050
+		  },
+		  {
+			"order": 16,
+			"cost": 14000
+		  }
+		]
+	  },
+	  {
+		"group": 2,
+		"group_pos": [
+		  {
+			"x": 2,
+			"y": 2
+		  },
+		  {
+			"x": 3,
+			"y": 2
+		  },
+		  {
+			"x": 4,
+			"y": 2
+		  },
+		  {
+			"x": 5,
+			"y": 2
+		  },
+		  {
+			"x": 6,
+			"y": 2
+		  },
+		  {
+			"x": 7,
+			"y": 2
+		  },
+		  {
+			"x": 8,
+			"y": 2
+		  },
+		  {
+			"x": 8,
+			"y": 3
+		  },
+		  {
+			"x": 8,
+			"y": 4
+		  },
+		  {
+			"x": 8,
+			"y": 5
+		  },
+		  {
+			"x": 8,
+			"y": 6
+		  },
+		  {
+			"x": 8,
+			"y": 7
+		  },
+		  {
+			"x": 8,
+			"y": 8
+		  },
+		  {
+			"x": 7,
+			"y": 8
+		  },
+		  {
+			"x": 6,
+			"y": 8
+		  },
+		  {
+			"x": 5,
+			"y": 8
+		  },
+		  {
+			"x": 4,
+			"y": 8
+		  },
+		  {
+			"x": 3,
+			"y": 8
+		  },
+		  {
+			"x": 2,
+			"y": 8
+		  },
+		  {
+			"x": 2,
+			"y": 7
+		  },
+		  {
+			"x": 2,
+			"y": 6
+		  },
+		  {
+			"x": 2,
+			"y": 5
+		  },
+		  {
+			"x": 2,
+			"y": 4
+		  },
+		  {
+			"x": 2,
+			"y": 3
+		  }
+		],
+		"price_order": [
+		  {
+			"order": 1,
+			"cost": 15250,
+			"triump_gem": 1250
+		  },
+		  {
+			"order": 2,
+			"cost": 16800,
+			"triump_gem": 1550
+		  },
+		  {
+			"order": 3,
+			"cost": 18650,
+			"triump_gem": 1850
+		  },
+		  {
+			"order": 4,
+			"cost": 20800,
+			"triump_gem": 2150
+		  },
+		  {
+			"order": 5,
+			"cost": 23250,
+			"triump_gem": 2450
+		  },
+		  {
+			"order": 6,
+			"cost": 26000,
+			"triump_gem": 2750
+		  },
+		  {
+			"order": 7,
+			"cost": 29050,
+			"triump_gem": 3050
+		  },
+		  {
+			"order": 8,
+			"cost": 32400,
+			"triump_gem": 3350
+		  },
+		  {
+			"order": 9,
+			"cost": 36050,
+			"triump_gem": 3650
+		  },
+		  {
+			"order": 10,
+			"cost": 40000,
+			"triump_gem": 3950
+		  },
+		  {
+			"order": 11,
+			"cost": 44250,
+			"triump_gem": 4250
+		  },
+		  {
+			"order": 12,
+			"cost": 48800,
+			"triump_gem": 4550
+		  },
+		  {
+			"order": 13,
+			"cost": 53650,
+			"triump_gem": 4850
+		  },
+		  {
+			"order": 14,
+			"cost": 58800,
+			"triump_gem": 5150
+		  },
+		  {
+			"order": 15,
+			"cost": 64250,
+			"triump_gem": 5450
+		  },
+		  {
+			"order": 16,
+			"cost": 70000,
+			"triump_gem": 5750
+		  },
+		  {
+			"order": 17,
+			"cost": 76050,
+			"triump_gem": 6050
+		  },
+		  {
+			"order": 18,
+			"cost": 82400,
+			"triump_gem": 6350
+		  },
+		  {
+			"order": 19,
+			"cost": 89050,
+			"triump_gem": 6650
+		  },
+		  {
+			"order": 20,
+			"cost": 96000,
+			"triump_gem": 6950
+		  },
+		  {
+			"order": 21,
+			"cost": 103250,
+			"triump_gem": 7250
+		  },
+		  {
+			"order": 22,
+			"cost": 110800,
+			"triump_gem": 7550
+		  },
+		  {
+			"order": 23,
+			"cost": 118650,
+			"triump_gem": 7850
+		  },
+		  {
+			"order": 24,
+			"cost": 126800,
+			"triump_gem": 8150
+		  }
+		]
+	  },
+	  {
+		"group": 3,
+		"group_pos": [
+		  {
+			"x": 1,
+			"y": 1
+		  },
+		  {
+			"x": 2,
+			"y": 1
+		  },
+		  {
+			"x": 3,
+			"y": 1
+		  },
+		  {
+			"x": 4,
+			"y": 1
+		  },
+		  {
+			"x": 5,
+			"y": 1
+		  },
+		  {
+			"x": 6,
+			"y": 1
+		  },
+		  {
+			"x": 7,
+			"y": 1
+		  },
+		  {
+			"x": 8,
+			"y": 1
+		  },
+		  {
+			"x": 9,
+			"y": 1
+		  },
+		  {
+			"x": 9,
+			"y": 2
+		  },
+		  {
+			"x": 9,
+			"y": 3
+		  },
+		  {
+			"x": 9,
+			"y": 4
+		  },
+		  {
+			"x": 9,
+			"y": 5
+		  },
+		  {
+			"x": 9,
+			"y": 6
+		  },
+		  {
+			"x": 9,
+			"y": 7
+		  },
+		  {
+			"x": 9,
+			"y": 8
+		  },
+		  {
+			"x": 9,
+			"y": 9
+		  },
+		  {
+			"x": 8,
+			"y": 9
+		  },
+		  {
+			"x": 7,
+			"y": 9
+		  },
+		  {
+			"x": 6,
+			"y": 9
+		  },
+		  {
+			"x": 5,
+			"y": 9
+		  },
+		  {
+			"x": 4,
+			"y": 9
+		  },
+		  {
+			"x": 3,
+			"y": 9
+		  },
+		  {
+			"x": 2,
+			"y": 9
+		  },
+		  {
+			"x": 1,
+			"y": 9
+		  },
+		  {
+			"x": 1,
+			"y": 8
+		  },
+		  {
+			"x": 1,
+			"y": 7
+		  },
+		  {
+			"x": 1,
+			"y": 6
+		  },
+		  {
+			"x": 1,
+			"y": 5
+		  },
+		  {
+			"x": 1,
+			"y": 4
+		  },
+		  {
+			"x": 1,
+			"y": 3
+		  },
+		  {
+			"x": 1,
+			"y": 2
+		  }
+		],
+		"price_order": [
+		  {
+			"order": 1,
+			"cost": 136200,
+			"triump_gem": 9400,
+			"blood_gem": 100
+		  },
+		  {
+			"order": 2,
+			"cost": 146850,
+			"triump_gem": 10650,
+			"blood_gem": 150
+		  },
+		  {
+			"order": 3,
+			"cost": 158750,
+			"triump_gem": 11900,
+			"blood_gem": 200
+		  },
+		  {
+			"order": 4,
+			"cost": 171900,
+			"triump_gem": 13150,
+			"blood_gem": 250
+		  },
+		  {
+			"order": 5,
+			"cost": 186300,
+			"triump_gem": 14400,
+			"blood_gem": 300
+		  },
+		  {
+			"order": 6,
+			"cost": 201950,
+			"triump_gem": 15650,
+			"blood_gem": 350
+		  },
+		  {
+			"order": 7,
+			"cost": 218850,
+			"triump_gem": 16900,
+			"blood_gem": 400
+		  },
+		  {
+			"order": 8,
+			"cost": 237000,
+			"triump_gem": 18150,
+			"blood_gem": 450
+		  },
+		  {
+			"order": 9,
+			"cost": 256400,
+			"triump_gem": 19400,
+			"blood_gem": 500
+		  },
+		  {
+			"order": 10,
+			"cost": 277050,
+			"triump_gem": 20650,
+			"blood_gem": 550
+		  },
+		  {
+			"order": 11,
+			"cost": 298950,
+			"triump_gem": 21900,
+			"blood_gem": 600
+		  },
+		  {
+			"order": 12,
+			"cost": 322100,
+			"triump_gem": 23150,
+			"blood_gem": 650
+		  },
+		  {
+			"order": 13,
+			"cost": 346500,
+			"triump_gem": 24400,
+			"blood_gem": 700
+		  },
+		  {
+			"order": 14,
+			"cost": 372150,
+			"triump_gem": 25650,
+			"blood_gem": 750
+		  },
+		  {
+			"order": 15,
+			"cost": 399050,
+			"triump_gem": 26900,
+			"blood_gem": 800
+		  },
+		  {
+			"order": 16,
+			"cost": 427200,
+			"triump_gem": 28150,
+			"blood_gem": 850
+		  },
+		  {
+			"order": 17,
+			"cost": 456600,
+			"triump_gem": 29400,
+			"blood_gem": 900
+		  },
+		  {
+			"order": 18,
+			"cost": 487250,
+			"triump_gem": 30650,
+			"blood_gem": 950
+		  },
+		  {
+			"order": 19,
+			"cost": 519150,
+			"triump_gem": 31900,
+			"blood_gem": 1000
+		  },
+		  {
+			"order": 20,
+			"cost": 552300,
+			"triump_gem": 33150,
+			"blood_gem": 1050
+		  },
+		  {
+			"order": 21,
+			"cost": 586700,
+			"triump_gem": 34400,
+			"blood_gem": 1100
+		  },
+		  {
+			"order": 22,
+			"cost": 622350,
+			"triump_gem": 35650,
+			"blood_gem": 1150
+		  },
+		  {
+			"order": 23,
+			"cost": 659250,
+			"triump_gem": 36900,
+			"blood_gem": 1200
+		  },
+		  {
+			"order": 24,
+			"cost": 697400,
+			"triump_gem": 38150,
+			"blood_gem": 1250
+		  },
+		  {
+			"order": 25,
+			"cost": 736800,
+			"triump_gem": 39400,
+			"blood_gem": 1300
+		  },
+		  {
+			"order": 26,
+			"cost": 777450,
+			"triump_gem": 40650,
+			"blood_gem": 1350
+		  },
+		  {
+			"order": 27,
+			"cost": 819350,
+			"triump_gem": 41900,
+			"blood_gem": 1400
+		  },
+		  {
+			"order": 28,
+			"cost": 862500,
+			"triump_gem": 43150,
+			"blood_gem": 1450
+		  },
+		  {
+			"order": 29,
+			"cost": 906900,
+			"triump_gem": 44400,
+			"blood_gem": 1500
+		  },
+		  {
+			"order": 30,
+			"cost": 952550,
+			"triump_gem": 45650,
+			"blood_gem": 1550
+		  },
+		  {
+			"order": 31,
+			"cost": 999450,
+			"triump_gem": 46900,
+			"blood_gem": 1600
+		  },
+		  {
+			"order": 32,
+			"cost": 1047600,
+			"triump_gem": 48150,
+			"blood_gem": 1650
+		  }
+		]
+	  }
+	]
+  },
+  "width": 6300,
+  "height": 3240,
+  "MaxOffsetX": 3150,
+  "MaxOffsetY": 0,
+  "MaxHalfWidth": 35,
+  "MaxHalfHeight": 18,
+  "scale": 1,
+  "numCol": 90,
+  "numRow": 90,
+  "mapObjects": {
+	"IDs": [
+	  "FPT_1",
+	  "HOU_1",
+	  "HOU_2",
+	  "HOU_3",
+	  "HOU_4",
+	  "HOU_5",
+	  "OBS_1",
+	  "OBS_2",
+	  "ROA_1",
+	  "TOW_1",
+	  "RFS_1",
+	  "RFS_2",
+	  "RFS_3",
+	  "RFS_4",
+	  "STO_1",
+	  "STO_2",
+	  "STO_3",
+	  "AIR_1",
+	  "MON_1",
+	  "MON_2",
+	  "MON_3",
+	  "MON_4",
+	  "MON_5",
+	  "MON_6",
+	  "MON_7",
+	  "PLA_1",
+	  "PLA_2",
+	  "PLA_3",
+	  "PLA_4",
+	  "POR_1"
+	]
+  }
+}

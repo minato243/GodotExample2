@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4h0disgdhrj5"]
+
+[ext_resource type="PackedScene" uid="uid://dlpq6foe0h7nn" path="res://model/buildings/DrinkMaker/rig.glb" id="1_mfwml"]
+
+[node name="TownHall" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.41336)
+
+[node name="rig" parent="." instance=ExtResource("1_mfwml")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.23752, 0, -4.973)

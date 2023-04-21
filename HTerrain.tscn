@@ -1,0 +1,43 @@
+[gd_scene load_steps=11 format=3 uid="uid://eo7eqm0f2uwf"]
+
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_mjkis"]
+[ext_resource type="Resource" path="res://TerrainData/data.hterrain" id="2_cxvgd"]
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="3_j4ca6"]
+[ext_resource type="Texture2D" uid="uid://bwepkq1duhfpy" path="res://HTerrain_slot0_albedo_bump.png" id="4_5xide"]
+[ext_resource type="Texture2D" uid="uid://cyheuiqnaqvqx" path="res://HTerrain_slot1_albedo_bump.png" id="5_qi44q"]
+[ext_resource type="Texture2D" uid="uid://cghiw2mwfk42o" path="res://HTerrain_slot0_normal_roughness.png" id="6_bmuhf"]
+[ext_resource type="Texture2D" uid="uid://cpbhl4ird3x01" path="res://HTerrain_slot1_normal_roughness.png" id="7_e7muq"]
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_detail_layer.gd" id="8_d7nvh"]
+[ext_resource type="Texture2D" uid="uid://6jmdwj3vn6m0" path="res://addons/zylann.hterrain/tools/icons/icon_detail_layer_node.svg" id="9_wt7mg"]
+
+[sub_resource type="Resource" id="Resource_xkjm6"]
+script = ExtResource("3_j4ca6")
+mode = 0
+textures = [[ExtResource("4_5xide"), ExtResource("5_qi44q")], [ExtResource("6_bmuhf"), ExtResource("7_e7muq")]]
+
+[node name="HTerrain" type="Node3D"]
+script = ExtResource("1_mjkis")
+_terrain_data = ExtResource("2_cxvgd")
+chunk_size = 64
+collision_enabled = true
+collision_layer = 1
+collision_mask = 1
+shader_type = "Classic4Lite"
+custom_shader = null
+custom_globalmap_shader = null
+texture_set = SubResource("Resource_xkjm6")
+render_layers = 1
+cast_shadow = 1
+shader_params/u_ground_uv_scale = 20
+shader_params/u_depth_blending = true
+shader_params/u_triplanar = null
+shader_params/u_tile_reduction = null
+
+[node name="@HTerrainDetailLayer@57273" type="Node3D" parent="."]
+script = ExtResource("8_d7nvh")
+shader_params/u_globalmap_tint_bottom = null
+shader_params/u_globalmap_tint_top = null
+shader_params/u_bottom_ao = null
+shader_params/u_instance_scale = null
+shader_params/u_roughness = null
+metadata/_editor_icon = ExtResource("9_wt7mg")
