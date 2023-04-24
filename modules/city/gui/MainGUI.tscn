@@ -1,0 +1,126 @@
+[gd_scene load_steps=7 format=3 uid="uid://t0b61jeyfh5x"]
+
+[ext_resource type="Script" path="res://modules/city/gui/MainGUI.gd" id="1_lyw3t"]
+[ext_resource type="Texture2D" uid="uid://d0ghur601fbjt" path="res://content/gui/NewLobby/upgrade_icon.png" id="2_8n2dt"]
+[ext_resource type="Texture2D" uid="uid://bwuxfea8vig3t" path="res://content/gui/NewLobby/cancel_icon.png" id="2_yrq50"]
+[ext_resource type="Texture2D" uid="uid://rvdyknnb332s" path="res://content/gui/NewLobby/info_icon.png" id="3_be7nm"]
+
+[sub_resource type="FontFile" id="FontFile_sqy8t"]
+face_index = null
+embolden = null
+transform = null
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gibm6"]
+font = SubResource("FontFile_sqy8t")
+outline_size = 1
+outline_color = Color(0.34902, 0.196078, 0.0784314, 1)
+
+[node name="MainGUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lyw3t")
+
+[node name="btnRemove" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 69.0
+offset_top = -119.0
+offset_right = 166.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("2_yrq50")
+
+[node name="Label" type="Label" parent="btnRemove"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -39.0
+offset_right = 20.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "REMOVE"
+label_settings = SubResource("LabelSettings_gibm6")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="btnInfo" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -169.0
+offset_top = -117.0
+offset_right = -72.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("3_be7nm")
+
+[node name="Label" type="Label" parent="btnInfo"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 60.0
+offset_right = 68.0
+offset_bottom = 86.0
+text = "Info"
+label_settings = SubResource("LabelSettings_gibm6")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="btnUpgrade" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -116.0
+offset_right = 47.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("2_8n2dt")
+
+[node name="Label" type="Label" parent="btnUpgrade"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -35.5
+offset_top = -40.0
+offset_right = 35.5
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Upgrade"
+label_settings = SubResource("LabelSettings_gibm6")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
