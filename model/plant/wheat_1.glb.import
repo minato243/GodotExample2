@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bg3m5jw15his6"
-path="res://.godot/imported/People.glb-543eb4396ddc2ad2a043df5b500dfa2f.scn"
+uid="uid://bhmwciowerife"
+path="res://.godot/imported/wheat_1.glb-181c3074b4775163701e47fdcc4ac71b.scn"
 
 [deps]
 
-source_file="res://model/People.glb"
-dest_files=["res://.godot/imported/People.glb-543eb4396ddc2ad2a043df5b500dfa2f.scn"]
+source_file="res://model/plant/wheat_1.glb"
+dest_files=["res://.godot/imported/wheat_1.glb-181c3074b4775163701e47fdcc4ac71b.scn"]
 
 [params]
 

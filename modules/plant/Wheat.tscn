@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ymidyub2y2g2"]
+
+[ext_resource type="PackedScene" uid="uid://bhmwciowerife" path="res://model/plant/wheat_1.glb" id="1_vwdjo"]
+
+[node name="Wheat" type="Node3D"]
+
+[node name="wheat_1" parent="." instance=ExtResource("1_vwdjo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.645891, -0.135409, 0.601324)

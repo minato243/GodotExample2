@@ -7,8 +7,8 @@ var fall_acceleration = 75
 var animator = null
 
 func _ready():
-	animator = $"Pivot/People/AnimationPlayer"
-
+#	animator = $"Pivot/People/AnimationPlayer"
+	pass
 func _physics_process(delta):
 	# We create a local variable to store the input direction.
 	var direction = Vector3.ZERO

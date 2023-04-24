@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hs0oatg0kei2"
-path.s3tc="res://.godot/imported/People_people_tex.png-c1e6c59a482e87d2243dfdad777e94dc.s3tc.ctex"
+uid="uid://bqdf4toawbfdv"
+path.s3tc="res://.godot/imported/wheat_1_Wheat.png-0d735506bd9a792d8df012b82ce5d082.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://model/People_people_tex.png"
-dest_files=["res://.godot/imported/People_people_tex.png-c1e6c59a482e87d2243dfdad777e94dc.s3tc.ctex"]
+source_file="res://model/plant/wheat_1_Wheat.png"
+dest_files=["res://.godot/imported/wheat_1_Wheat.png-0d735506bd9a792d8df012b82ce5d082.s3tc.ctex"]
 
 [params]
 
