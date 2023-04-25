@@ -7,36 +7,44 @@ var Wheat = preload("res://modules/plant/Wheat.tscn")
 var config = null
 
 @onready var myCamera = $"Camera3D"
+@onready var mainGui = $"CityHUD"
+
+var listBuilding = []
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	loadConfig()
 	initMap()
-		
+
 
 func loadConfig():
 	var file = FileAccess.open("res://configs/Map.json", FileAccess.READ)
 	var data = JSON.parse_string(file.get_as_text())
 	config = data
 	print(data["map1"])
-	
+
+
 func initMap():
-	print("*** "+ JSON.stringify(config["map1"]))
+	print("*** " + JSON.stringify(config["map1"]))
 	for obj in config["map1"]["objects"]:
-		print("*** "+ JSON.stringify(obj))
+		print("*** " + JSON.stringify(obj))
 		for iso_pos in obj["iso_pos"]:
 			var building = getInstance(obj["id"])
-			if(building != null):
+			if building != null:
 				building = getInstance(obj["id"])
 				building.position = Vector3(obj.iso_pos[0].x, 0, obj.iso_pos[0].y)
 				add_child(building)
+				listBuilding.append(building)
 			else:
 				break
-	
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-	
+
+
 func getInstance(buildingTypoe):
 	var building = null
 	match buildingTypoe:
@@ -49,17 +57,19 @@ func getInstance(buildingTypoe):
 		"FPT_1":
 			building = Wheat.instantiate()
 	return building
-	
+
+
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.pressed && event.button_index == MOUSE_BUTTON_LEFT:
 			print(event.position)
-			var position = touch_location(event.position)
-			print(position)
-			
+			var mPosition = touch_location(event.position)
+			print(mPosition)
+
+
 func touch_location(position, mask = 1) -> Vector3:
 	var camera = myCamera
-	var ray_length = 1000	
+	var ray_length = 1000
 	var ray_start = camera.project_ray_origin(position)
 	print(ray_start)
 	print(camera.project_ray_normal(position))
@@ -67,13 +77,18 @@ func touch_location(position, mask = 1) -> Vector3:
 	print(ray_end)
 	var ray_normal = ray_end - ray_start
 	print(ray_normal)
-	
+
 	var result = Vector3()
 	result.y = 0
-	result.x = ray_start.x - ray_start.y *ray_normal.x/ray_normal.y
-	result.z = ray_start.z - ray_start.y *ray_normal.z/ray_normal.y
-	var building = TownHall.instantiate()
-	building.position = result
-	add_child(building)
+	result.x = ray_start.x - ray_start.y * ray_normal.x / ray_normal.y
+	result.z = ray_start.z - ray_start.y * ray_normal.z / ray_normal.y
 	return result
-	
+
+
+func selectBuilding():
+	pass
+
+func getBuildingAtPosition(location):
+	for building in listBuilding:
+		var rect = Rect2(Vector2(building.position.x, building.position.z), Vector2())
+		

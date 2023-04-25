@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://db0i0iyjy7qrc"]
+[gd_scene load_steps=8 format=3 uid="uid://db0i0iyjy7qrc"]
 
 [ext_resource type="Texture2D" uid="uid://cpafhjmf6x1qu" path="res://content/gui/NewLobby/btnShop.png" id="1_d37b5"]
 [ext_resource type="Script" path="res://modules/city/gui/CityHUD.gd" id="1_y163n"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bj871ukdi2gae" path="res://content/gui/NewLobby/icGold.png" id="4_jqnkr"]
 [ext_resource type="Texture2D" uid="uid://xvlgh8c7r7y8" path="res://content/gui/NewLobby/icCoin.png" id="5_67orc"]
 [ext_resource type="Texture2D" uid="uid://dg7mg6kblnba7" path="res://content/gui/NewLobby/icBloodGem.png" id="6_tax8j"]
+[ext_resource type="PackedScene" uid="uid://t0b61jeyfh5x" path="res://modules/city/gui/MainGUI.tscn" id="7_vcq45"]
 
 [node name="CityHUD" type="Control"]
 layout_mode = 3
@@ -78,3 +79,10 @@ offset_top = -12.0
 offset_right = 47.0
 offset_bottom = 14.0
 text = "10.000.000"
+
+[node name="mainGui" parent="." instance=ExtResource("7_vcq45")]
+layout_mode = 1
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 1.0
+offset_bottom = 3.0

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctp1lw3q4c00s"]
+
+[ext_resource type="Script" path="res://modules/buildings/BuildingOject.gd" id="1_meiln"]
+[ext_resource type="PackedScene" uid="uid://dlpq6foe0h7nn" path="res://model/buildings/DrinkMaker/rig.glb" id="2_au6il"]
+
+[node name="BuildingOject" type="Node3D"]
+script = ExtResource("1_meiln")
+
+[node name="rig" parent="." instance=ExtResource("2_au6il")]
