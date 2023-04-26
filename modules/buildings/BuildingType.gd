@@ -1,1 +1,7 @@
-enum BuildingType{TOW, STO, ROA}
+# At the top of BuildingType.gd
+class_name BuildingType
+enum {
+	TOW, 
+	STO, 
+	ROA
+}

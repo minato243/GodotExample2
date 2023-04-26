@@ -32,10 +32,9 @@ func initMap():
 		for iso_pos in obj["iso_pos"]:
 			var building = getInstance(obj["id"])
 			if building != null:
-				building = getInstance(obj["id"])
+				addObj(building)
 				building.position = Vector3(obj.iso_pos[0].x, 0, obj.iso_pos[0].y)
-				add_child(building)
-				listBuilding.append(building)
+				
 			else:
 				break
 
@@ -49,12 +48,16 @@ func getInstance(buildingTypoe):
 	var building = null
 	match buildingTypoe:
 		"TOW_1":
+			print("TOW_1")
 			building = TownHall.instantiate()
 		"STO_2":
+			print("STO_2")
 			building = Storage.instantiate()
 		"ROA_1":
+			print("ROA_1")
 			building = Road.instantiate()
 		"FPT_1":
+			print("FPT_1")
 			building = Wheat.instantiate()
 	return building
 
@@ -65,6 +68,10 @@ func _input(event):
 			print(event.position)
 			var mPosition = touch_location(event.position)
 			print(mPosition)
+			var building = getBuildingAtPosition(mPosition)
+			if(building != null):
+				selectBuilding(building)
+			print(get_node("."))
 
 
 func touch_location(position, mask = 1) -> Vector3:
@@ -85,10 +92,20 @@ func touch_location(position, mask = 1) -> Vector3:
 	return result
 
 
-func selectBuilding():
-	pass
+func selectBuilding(building):
+	building.select()
 
 func getBuildingAtPosition(location):
 	for building in listBuilding:
-		var rect = Rect2(Vector2(building.position.x, building.position.z), Vector2())
-		
+		var rect = Rect2(Vector2(building.position.x, building.position.z), Vector2(8, 8))
+		print(location)
+		print(rect)
+		if(rect.has_point(Vector2(location.x, location.z))):
+			print(building)
+			return building
+	return null
+	
+func addObj(mapObj):
+	add_child(mapObj)
+	listBuilding.append(mapObj)
+	mapObj.setCurMap(self)

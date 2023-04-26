@@ -1,8 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b73c1nhyqvtuf"]
+[gd_scene load_steps=3 format=3 uid="uid://b73c1nhyqvtuf"]
 
-[ext_resource type="PackedScene" uid="uid://cvtgf1a2o12ip" path="res://model/buildings/HenHouse/hen_house.glb" id="1_kttxl"]
+[ext_resource type="PackedScene" uid="uid://ctp1lw3q4c00s" path="res://modules/buildings/BuildingOject.tscn" id="1_psfkd"]
+[ext_resource type="Script" path="res://modules/buildings/Storage.gd" id="2_askff"]
 
-[node name="Storage" type="Node3D"]
-
-[node name="hen_house" parent="." instance=ExtResource("1_kttxl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.937522, -0.0184107, 2.2105)
+[node name="Storage" instance=ExtResource("1_psfkd")]
+script = ExtResource("2_askff")

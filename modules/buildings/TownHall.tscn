@@ -1,7 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4h0disgdhrj5"]
+[gd_scene load_steps=3 format=3 uid="uid://c4h0disgdhrj5"]
 
-[ext_resource type="PackedScene" uid="uid://dlpq6foe0h7nn" path="res://model/buildings/DrinkMaker/rig.glb" id="1_mfwml"]
+[ext_resource type="PackedScene" uid="uid://ctp1lw3q4c00s" path="res://modules/buildings/BuildingOject.tscn" id="1_xu5yw"]
+[ext_resource type="Script" path="res://modules/buildings/TownHall.gd" id="2_ymw5r"]
 
-[node name="TownHall" type="Node3D"]
+[node name="TownHall" instance=ExtResource("1_xu5yw")]
+script = ExtResource("2_ymw5r")
 
-[node name="rig" parent="." instance=ExtResource("1_mfwml")]
+[node name="rig" parent="." index="1"]
+script = ExtResource("2_ymw5r")

@@ -1,8 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ymidyub2y2g2"]
+[gd_scene load_steps=3 format=3 uid="uid://ymidyub2y2g2"]
 
-[ext_resource type="PackedScene" uid="uid://bhmwciowerife" path="res://model/plant/wheat_1.glb" id="1_vwdjo"]
+[ext_resource type="PackedScene" uid="uid://ctp1lw3q4c00s" path="res://modules/buildings/BuildingOject.tscn" id="1_2ayu1"]
+[ext_resource type="Script" path="res://modules/plant/Wheat.gd" id="2_rhjqv"]
 
-[node name="Wheat" type="Node3D"]
-
-[node name="wheat_1" parent="." instance=ExtResource("1_vwdjo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.645891, -0.135409, 0.601324)
+[node name="Wheat" instance=ExtResource("1_2ayu1")]
+script = ExtResource("2_rhjqv")

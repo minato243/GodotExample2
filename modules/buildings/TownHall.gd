@@ -1,15 +1,15 @@
-extends Node3D
+extends "res://modules/buildings/BuildingOject.gd"
 
-var width: int
-var height: int
-var cellPosition: Vector2i
+
+func _init():
+	type = BuildingType.TOW
+	super()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	super()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
-	
+	super(delta)

@@ -1,9 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://ctp1lw3q4c00s"]
+[gd_scene load_steps=5 format=3 uid="uid://ctp1lw3q4c00s"]
 
 [ext_resource type="Script" path="res://modules/buildings/BuildingOject.gd" id="1_meiln"]
 [ext_resource type="PackedScene" uid="uid://dlpq6foe0h7nn" path="res://model/buildings/DrinkMaker/rig.glb" id="2_au6il"]
+[ext_resource type="Texture2D" uid="uid://c4dqg63y1ym1l" path="res://content/gui/NewLobby/btnClose.png" id="3_2uu04"]
+[ext_resource type="PackedScene" uid="uid://bhmwciowerife" path="res://model/plant/wheat_1.glb" id="3_lkfu2"]
 
 [node name="BuildingOject" type="Node3D"]
 script = ExtResource("1_meiln")
 
+[node name="btn_cancel" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("3_2uu04")
+
 [node name="rig" parent="." instance=ExtResource("2_au6il")]
+
+[node name="wheat_1" parent="." instance=ExtResource("3_lkfu2")]

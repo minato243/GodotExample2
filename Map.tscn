@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://yk5jjg21a8x4"]
+[gd_scene load_steps=10 format=3 uid="uid://yk5jjg21a8x4"]
 
 [ext_resource type="Script" path="res://modules/map/map.gd" id="1_4ujm5"]
 [ext_resource type="PackedScene" uid="uid://eo7eqm0f2uwf" path="res://HTerrain.tscn" id="1_o7cgu"]
@@ -6,7 +6,6 @@
 [ext_resource type="Script" path="res://Camera3D.gd" id="2_q8t0f"]
 [ext_resource type="PackedScene" uid="uid://kennj7nghhgy" path="res://Character.tscn" id="3_pvj60"]
 [ext_resource type="PackedScene" uid="uid://cwcrouu126jxa" path="res://model/archer/archer.glb" id="4_i4udo"]
-[ext_resource type="PackedScene" uid="uid://ymidyub2y2g2" path="res://modules/plant/Wheat.tscn" id="6_lwfj2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_k4li4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -51,6 +50,3 @@ speed = 10
 
 [node name="archer" parent="." instance=ExtResource("4_i4udo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 321.66, -1.44872, 319.96)
-
-[node name="Wheat" parent="." instance=ExtResource("6_lwfj2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 314.926, 0.00048399, 318.307)
