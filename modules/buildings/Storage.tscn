@@ -5,3 +5,6 @@
 
 [node name="Storage" instance=ExtResource("1_psfkd")]
 script = ExtResource("2_askff")
+
+[node name="ground_4x4" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)

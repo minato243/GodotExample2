@@ -53,25 +53,25 @@ func getInstance(buildingTypoe):
 		"STO_2":
 			print("STO_2")
 			building = Storage.instantiate()
-		"ROA_1":
-			print("ROA_1")
-			building = Road.instantiate()
-		"FPT_1":
-			print("FPT_1")
-			building = Wheat.instantiate()
+#		"ROA_1":
+#			print("ROA_1")
+#			building = Road.instantiate()
+#		"FPT_1":
+#			print("FPT_1")
+#			building = Wheat.instantiate()
 	return building
 
 
-func _input(event):
-	if event is InputEventMouseButton:
-		if event.pressed && event.button_index == MOUSE_BUTTON_LEFT:
-			print(event.position)
-			var mPosition = touch_location(event.position)
-			print(mPosition)
-			var building = getBuildingAtPosition(mPosition)
-			if(building != null):
-				selectBuilding(building)
-			print(get_node("."))
+#func _input(event):
+#	if event is InputEventMouseButton:
+#		if event.pressed && event.button_index == MOUSE_BUTTON_LEFT:
+#			print(event.position)
+#			var mPosition = touch_location(event.position)
+#			print(mPosition)
+#			var building = getBuildingAtPosition(mPosition)
+#			if(building != null):
+#				selectBuilding(building)
+#			print(get_node("."))
 
 
 func touch_location(position, mask = 1) -> Vector3:

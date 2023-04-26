@@ -40,7 +40,7 @@ light_indirect_energy = 1.152
 light_volumetric_fog_energy = 1.61
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.499999, 0.866025, 0, -0.866025, 0.499999, 320, 10.053, 320)
+transform = Transform3D(1, 0, 0, 0, 0.499999, 0.866026, 0, -0.866026, 0.499999, 320, 10.053, 320)
 script = ExtResource("2_q8t0f")
 speed = 8
 

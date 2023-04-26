@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnsr2grwcvtpj"]
+[gd_scene load_steps=4 format=3 uid="uid://cnsr2grwcvtpj"]
 
 [ext_resource type="PackedScene" uid="uid://ctp1lw3q4c00s" path="res://modules/buildings/BuildingOject.tscn" id="1_yl3ll"]
 [ext_resource type="Script" path="res://modules/buildings/Road.gd" id="2_f18jp"]
+[ext_resource type="Texture2D" uid="uid://dh0s0wa6wm65q" path="res://content/gui/NewLobby/accept.png" id="3_c0ad8"]
 
 [node name="Road" instance=ExtResource("1_yl3ll")]
 script = ExtResource("2_f18jp")
+
+[node name="Sprite3D" type="Sprite3D" parent="rig" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.54171, 6.61173, 2.67293)
+texture = ExtResource("3_c0ad8")
