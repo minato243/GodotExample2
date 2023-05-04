@@ -62,16 +62,16 @@ func getInstance(buildingTypoe):
 	return building
 
 
-#func _input(event):
-#	if event is InputEventMouseButton:
-#		if event.pressed && event.button_index == MOUSE_BUTTON_LEFT:
-#			print(event.position)
-#			var mPosition = touch_location(event.position)
-#			print(mPosition)
-#			var building = getBuildingAtPosition(mPosition)
-#			if(building != null):
-#				selectBuilding(building)
-#			print(get_node("."))
+func _unhandled_input (event):
+	if event is InputEventMouseButton:
+		if event.pressed && event.button_index == MOUSE_BUTTON_LEFT:
+			print(event.position)
+			var mPosition = touch_location(event.position)
+			print(mPosition)
+			var building = getBuildingAtPosition(mPosition)
+			if(building != null):
+				selectBuilding(building)
+			print(get_node("."))
 
 
 func touch_location(position, mask = 1) -> Vector3:

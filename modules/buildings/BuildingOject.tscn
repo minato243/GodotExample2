@@ -1,16 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctp1lw3q4c00s"]
+[gd_scene load_steps=7 format=3 uid="uid://ctp1lw3q4c00s"]
 
 [ext_resource type="Script" path="res://modules/buildings/BuildingOject.gd" id="1_meiln"]
 [ext_resource type="Texture2D" uid="uid://csdg204bqx0ba" path="res://content/gui/NewLobby/cancel.png" id="2_78m7q"]
 [ext_resource type="PackedScene" uid="uid://dlpq6foe0h7nn" path="res://model/buildings/DrinkMaker/rig.glb" id="2_au6il"]
 [ext_resource type="Texture2D" uid="uid://dh0s0wa6wm65q" path="res://content/gui/NewLobby/accept.png" id="2_p4nfm"]
 [ext_resource type="PackedScene" uid="uid://sxtefoq65jik" path="res://model/Ground/ground_4x4.glb" id="4_6kvqj"]
-[ext_resource type="Script" path="res://modules/buildings/ButtonCancel.gd" id="4_rtnco"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_fppl7"]
-resource_local_to_scene = true
-custom_solver_bias = 0.084
-size = Vector3(10, 10, 2)
+[sub_resource type="BoxShape3D" id="BoxShape3D_6smv8"]
+size = Vector3(1, 1, 0.2)
 
 [node name="BuildingOject" type="Node3D"]
 script = ExtResource("1_meiln")
@@ -18,22 +15,25 @@ script = ExtResource("1_meiln")
 [node name="ground_4x4" parent="." instance=ExtResource("4_6kvqj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09866, 0, 3.97882)
 
-[node name="cancel" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 6)
-texture = ExtResource("2_78m7q")
-script = ExtResource("4_rtnco")
-
-[node name="Area3D" type="Area3D" parent="cancel"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="cancel/Area3D"]
-shape = SubResource("BoxShape3D_fppl7")
-
-[node name="accept" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4, 6)
-texture = ExtResource("2_p4nfm")
-
 [node name="rig" parent="." instance=ExtResource("2_au6il")]
 
-[connection signal="area_entered" from="cancel/Area3D" to="." method="_on_area_3d_area_entered"]
-[connection signal="input_event" from="cancel/Area3D" to="." method="_on_area_3d_input_event"]
-[connection signal="mouse_entered" from="cancel/Area3D" to="." method="_on_area_3d_mouse_entered"]
+[node name="accept" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.74073, 4, 6)
+texture = ExtResource("2_p4nfm")
+
+[node name="Area3DAccept" type="Area3D" parent="accept"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="accept/Area3DAccept"]
+shape = SubResource("BoxShape3D_6smv8")
+
+[node name="cancel" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41274, 4, 6)
+texture = ExtResource("2_78m7q")
+
+[node name="Area3DCancel" type="Area3D" parent="cancel"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cancel/Area3DCancel"]
+shape = SubResource("BoxShape3D_6smv8")
+
+[connection signal="input_event" from="accept/Area3DAccept" to="." method="_on_accpet_input_event"]
+[connection signal="input_event" from="cancel/Area3DCancel" to="." method="_on_cancel_input_event"]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://drpc5dm2oer76"]
+
+[ext_resource type="Texture2D" uid="uid://dh0s0wa6wm65q" path="res://content/gui/NewLobby/accept.png" id="1_h2ad0"]
+[ext_resource type="Script" path="res://test.gd" id="1_w8qft"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qa4mo"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_w8qft")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0669182, 0.997758, 0, -0.997758, -0.0669182, 0, 0, 0)
+texture = ExtResource("1_h2ad0")
+
+[node name="Area3D" type="Area3D" parent="Sprite3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sprite3D/Area3D"]
+shape = SubResource("BoxShape3D_qa4mo")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.258853, 0.965917, 0, -0.965917, -0.258853, 0, 1.63416, 0)
+
+[connection signal="input_event" from="Sprite3D/Area3D" to="." method="_on_area_3d_input_event"]

@@ -1,10 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://b73c1nhyqvtuf"]
+[gd_scene load_steps=4 format=3 uid="uid://b73c1nhyqvtuf"]
 
 [ext_resource type="PackedScene" uid="uid://ctp1lw3q4c00s" path="res://modules/buildings/BuildingOject.tscn" id="1_psfkd"]
 [ext_resource type="Script" path="res://modules/buildings/Storage.gd" id="2_askff"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_oj05m"]
+resource_local_to_scene = true
+custom_solver_bias = 0.084
+size = Vector3(10, 10, 2)
+
 [node name="Storage" instance=ExtResource("1_psfkd")]
 script = ExtResource("2_askff")
 
-[node name="ground_4x4" parent="." index="2"]
+[node name="ground_4x4" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+
+[node name="CollisionShape3D" parent="cancel/Area3D" index="0"]
+shape = SubResource("BoxShape3D_oj05m")

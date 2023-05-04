@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://ymidyub2y2g2"]
+[gd_scene load_steps=4 format=3 uid="uid://ymidyub2y2g2"]
 
 [ext_resource type="PackedScene" uid="uid://ctp1lw3q4c00s" path="res://modules/buildings/BuildingOject.tscn" id="1_2ayu1"]
 [ext_resource type="Script" path="res://modules/plant/Wheat.gd" id="2_rhjqv"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_mxn0d"]
+resource_local_to_scene = true
+custom_solver_bias = 0.084
+size = Vector3(10, 10, 2)
+
 [node name="Wheat" instance=ExtResource("1_2ayu1")]
 script = ExtResource("2_rhjqv")
+
+[node name="CollisionShape3D" parent="cancel/Area3D" index="0"]
+shape = SubResource("BoxShape3D_mxn0d")
