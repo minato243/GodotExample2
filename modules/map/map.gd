@@ -4,10 +4,12 @@ var TownHall = preload("res://modules/buildings/TownHall.tscn")
 var Storage = preload("res://modules/buildings/Storage.tscn")
 var Road = preload("res://modules/buildings/Road.tscn")
 var Wheat = preload("res://modules/plant/Wheat.tscn")
+var MapMgr = preload("res://modules/map/MapMgr.gd")
 var config = null
 
 @onready var myCamera = $"Camera3D"
 @onready var mainGui = $"CityHUD"
+var mapMgr = null
 
 var listBuilding = []
 
@@ -16,6 +18,10 @@ var listBuilding = []
 func _ready():
 	loadConfig()
 	initMap()
+	mainGui.setMapMgr(mapMgr)
+	
+func _enter_tree():
+	mapMgr = MapMgr.new()
 
 
 func loadConfig():

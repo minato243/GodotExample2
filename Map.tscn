@@ -27,6 +27,7 @@ script = ExtResource("1_4ujm5")
 [node name="CityHUD" parent="." instance=ExtResource("2_btqtu")]
 offset_left = 1.0
 offset_right = 1.0
+mouse_filter = 2
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_k7mdf")
@@ -49,4 +50,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 320, 0.089, 320)
 speed = 10
 
 [node name="archer" parent="." instance=ExtResource("4_i4udo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 321.66, -1.44872, 319.96)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 321.66, 0.929088, 319.96)

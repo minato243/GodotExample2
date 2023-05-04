@@ -13,6 +13,7 @@ func _process(delta):
 	pass
 	
 func newBuilding(buildingType):
+	print("newBuilding")
 	var building = getInstance(buildingType)
 	
 	
